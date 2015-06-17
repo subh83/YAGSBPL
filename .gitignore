@@ -1,0 +1,19 @@
+# Ignore everything:
+*
+
+# Except for the following:
+!/.gitignore
+!/README.txt
+!/*.h
+!/*.cpp
+!yagsbpl-2.1/
+!yagsbpl-2.1/*.h
+!yagsbpl-2.1/*.cpp
+!yagsbpl-2.1/planners/
+!yagsbpl-2.1/planners/*.h
+!yagsbpl-2.1/planners/*.cpp
+!test_yagsbpl-2.0/
+!test_yagsbpl-2.0/*.h
+!test_yagsbpl-2.0/*.cpp
+!test_yagsbpl-2.0/*.txt
+
