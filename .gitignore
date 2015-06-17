@@ -15,5 +15,6 @@
 !test_yagsbpl-2.0/
 !test_yagsbpl-2.0/*.h
 !test_yagsbpl-2.0/*.cpp
+!test_yagsbpl-2.0/*.sh
 !test_yagsbpl-2.0/*.txt
 
