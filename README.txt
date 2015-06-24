@@ -69,9 +69,9 @@ Basic Usage:
 class myNode
 {
 public:
-	int x, y;
-	bool operator==(const myNode& n)
-	    { return (x==n.x && y==n.y); }
+    int x, y;
+    bool operator==(const myNode& n)
+        { return (x==n.x && y==n.y); }
 };
 
 // Hash function for storing a node
@@ -83,17 +83,17 @@ int getHashBin(myNode& n)
 // Function describing graph connectivity
 void getSuccessors(myNode& n, std::vector<myNode>* s, std::vector<double>* c) 
 {
-	myNode tn;
-	for (int a=-1; a<=1; a++)
-		for (int b=-1; b<=1; b++) {
-			if (a==0 && b==0) continue;
-			
-			tn.x = n.x + a;
-			tn.y = n.y + b;
-			// TODO
-		    s->push_back(tn);
-		    c->push_back(sqrt((double)(a*a+b*b))); 
-		}
+    myNode tn;
+    for (int a=-1; a<=1; a++)
+        for (int b=-1; b<=1; b++) {
+            if (a==0 && b==0) continue;
+            
+            tn.x = n.x + a;
+            tn.y = n.y + b;
+            // TODO
+            s->push_back(tn);
+            c->push_back(sqrt((double)(a*a+b*b))); 
+        }
 }
 
 // .....
@@ -102,29 +102,29 @@ void getSuccessors(myNode& n, std::vector<myNode>* s, std::vector<double>* c)
 int main(int argc, char *argv[])
 {
     // Initiate the graph structure
-	GenericSearchGraphDescriptor<myNode,double> myGraph;
-	
-	// set function pointers
-	myGraph.getHashBin_fp = &getHashBin;
-	myGraph.getSuccessors_fp = &getSuccessors;
-	myGraph.hashTableSize = 201;
-	
-	myNode tempNode;
-	tempNode.x = -150; tempNode.y = -150; // Start node
-	myGraph.SeedNode = tempNode;
-	
-	
-	// Planning/searching
-	A_star_planner<myNode,double>  planner;
-	planner.init(myGraph);
-	planner.plan();
-	
-	// retrieve the found shortest path(s)
-	std::vector< std::vector< myNode > > paths = planner.getPlannedPaths();
-	printf("\nNumber of paths: %d \n", paths.size());
-	printf("\nCoordinates of path 0: ");
-	for (int a=0; a<paths[0].size(); a++)
-		printf("(%d, %d)-", paths[0][a].x, paths[0][a].y);
+    GenericSearchGraphDescriptor<myNode,double> myGraph;
+    
+    // set function pointers
+    myGraph.getHashBin_fp = &getHashBin;
+    myGraph.getSuccessors_fp = &getSuccessors;
+    myGraph.hashTableSize = 201;
+    
+    myNode tempNode;
+    tempNode.x = -150; tempNode.y = -150; // Start node
+    myGraph.SeedNode = tempNode;
+    
+    
+    // Planning/searching
+    A_star_planner<myNode,double>  planner;
+    planner.init(myGraph);
+    planner.plan();
+    
+    // retrieve the found shortest path(s)
+    std::vector< std::vector< myNode > > paths = planner.getPlannedPaths();
+    printf("\nNumber of paths: %d \n", paths.size());
+    printf("\nCoordinates of path 0: ");
+    for (int a=0; a<paths[0].size(); a++)
+        printf("(%d, %d)-", paths[0][a].x, paths[0][a].y);
 }
 
 
