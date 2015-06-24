@@ -12,9 +12,9 @@
 !yagsbpl-2.1/planners/
 !yagsbpl-2.1/planners/*.h
 !yagsbpl-2.1/planners/*.cpp
-!test_yagsbpl-2.0/
-!test_yagsbpl-2.0/*.h
-!test_yagsbpl-2.0/*.cpp
-!test_yagsbpl-2.0/*.sh
-!test_yagsbpl-2.0/*.txt
+!examples-2.x/
+!examples-2.x/*.h
+!examples-2.x/*.cpp
+!examples-2.x/*.sh
+!examples-2.x/*.txt
 

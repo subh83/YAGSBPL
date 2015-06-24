@@ -32,6 +32,13 @@ Important notice: Versions 1.x and 2.x of YAGSBPL are depreciated and support fo
 *  http://subhrajit.net/index.php?WPage=yagsbpl                         *
 **************************************************************************
 
+Features:
+--------
+
+YAGSBPL is designed to be:
+
+* Fast (e.g., with integer coordinates for nodes but floating point cost as well as cost function needing to perform floating point operations online, and an average degree of the graph being 8, the library can expand about 70,000 nodes in the graph in just 1 second on a 2.1GHz processor machine with 2GB RAM.)
+* Easy to use (being template-based, defining new arbitrary node-types, cost types, etc. is made easy. For graph connectivity, node accessibility tests, etc, pointers to user-defined functions can be used, which makes defining the graph structure very easy, yet highly flexible.) 
 
 
 Version history:
