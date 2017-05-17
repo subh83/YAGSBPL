@@ -10,6 +10,8 @@
 ==========================================================================
 
 
+YAGSBPL (deprecated)...
+
 *******************************************************************************
 *                                                                             *
 * Yet Another Graph-Search Based Planning Library (YAGSBPL)                   *
@@ -34,10 +36,10 @@
 *                                                                             *
 *******************************************************************************
 
-This is the new page for YAGSBPL, previously available at
+This is the newer page for YAGSBPL, previously available at
     https://code.google.com/p/yagsbpl/
 
-Important notice: Versions 1.x and 2.x of YAGSBPL are deprecated (although fully functional) and support for them will be discontinued. Version 3.x is under development, and will be available soon.
+Important notice: Versions 1.x and 2.x of YAGSBPL are deprecated (although fully functional) and support for them will be discontinued. Version 3.x has now been renamed as DOSL (Discrete Optimal Search Library) and is available at https://github.com/subh83/DOSL 
 
 For the latest documentation, detailed tutorial and download, visit
     http://subhrajit.net/index.php?WPage=yagsbpl
