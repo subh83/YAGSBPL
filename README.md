@@ -3,11 +3,11 @@
 *    The latest version of YAGSBPL has a new name and a new home:        *
 *        DOSL: Discrete Optimal Search Library                           *
 *        Available at: https://github.com/subh83/DOSL                    *
-*    <span style='font-weight:bold; color:red;'>YAGSBPL is deprecated and support for it has been discontinued.</span>     *
+*    <b><font color=red>YAGSBPL is deprecated and support for it has been discontinued.</font></b>     *
 *        It has been superseded by DOSL.                                 *
 *        Please vist https://github.com/subh83/DOSL to download DOSL.    *
 **************************************************************************
-</pe>
+</pre>
 
 ==========================================================================
 
