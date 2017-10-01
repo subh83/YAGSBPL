@@ -1,3 +1,4 @@
+```
 **************************************************************************
 *    The latest version of YAGSBPL has a new name and a new home:        *
 *        DOSL: Discrete Optimal Search Library                           *
@@ -6,12 +7,14 @@
 *        It has been superseded by DOSL.                                 *
 *        Please vist https://github.com/subh83/DOSL to download DOSL.    *
 **************************************************************************
+```
 
 ==========================================================================
 
 
 YAGSBPL (deprecated)...
 
+```
 *******************************************************************************
 *                                                                             *
 * Yet Another Graph-Search Based Planning Library (YAGSBPL)                   *
@@ -168,3 +171,4 @@ Version history:
  - Some bug fixes
  - Binary heap as priority list
  
+```
